@@ -1,0 +1,140 @@
+<html>
+<head>
+     <meta content="charset=utf-8"/>
+     <title>Sarah's cv</title>
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <a class="logo" href="index.html">Sarah Mohammed Almofadhi | Information Technology Student </a>
+  <div class="header-right">
+    <a class="active" href="#home">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="imges/e.png" style="width:100%" alt="image">
+</div>
+<div class="mySlides fade">
+<img src="imges/h.png" style="width:100%" alt="image">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+
+showSlides();
+
+
+function showSlides() {
+
+var i;
+
+var slides = document.getElementsByClassName("mySlides");
+
+var dots = document.getElementsByClassName("dot");
+
+for (i = 0; i < slides.length; i++) {
+
+slides[i].style.display = "none";
+
+}
+
+slideIndex++;
+
+if (slideIndex > slides.length) {slideIndex = 1}
+
+for (i = 0; i < dots.length; i++) {
+
+dots[i].className = dots[i].className.replace(" active", "");
+
+}
+
+slides[slideIndex-1].style.display = "block";
+
+dots[slideIndex-1].className += " active";
+
+setTimeout(showSlides, 7000);
+
+}
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <div id="page-wrap">
+        <dl>
+		 <div id="objective">
+            <p>
+                I am student Specialty is Information Technology At AlQassim University I have experience in web design and development, graphic design, and i have also experience in dealing with clients.
+            </p>
+        </div>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2>Al Rowad National Schools - Secondary School Certificate</h2>
+				<br />
+				<h2> Al Qussaim university - Bachelor Degree </h3>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd>
+                <h2>Office skills</h2>
+                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
+                
+                <h2>Computer skills</h2>
+                <p>Microsoft productivity software (Word, Excel, etc), Adobe Illustrator and Photoshop </p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Experience</dt>
+            <dd>
+                <h2>President and Designer of ACM Club - Computer college </h2>
+                <ul>
+                   Designed
+Several ACM ads and publications
+Is the first organization to support the scientific and educational fields of the computer,
+ and organizes many activities related to computerization in many universities, in addition to 
+ the organization of conferences and global competitions
+                </ul>
+                
+                <h2>Freelancers</h2>
+                <ul>
+                    Contracted with the Nx party project to design full Identity 
+                </ul> 
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>Graphic design , Drawing , cooking </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>References</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        <div class="clear"></div>
+    
+    </div>
+<footer class="footer">
+</footer>
+</body>
+
+</html>
